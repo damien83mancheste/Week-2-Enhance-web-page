@@ -103,9 +103,6 @@ p {
             padding: 1%;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			display: grid;
-			grid-template-columns: repeat(6, 1fr);
-			gap: 10px;
         }
 
         .flexbox {
@@ -118,8 +115,6 @@ p {
             min-height: 15%;
 			width: 25%;
 			margin-left: 12%;
-			overflow: auto;
-			white-space: nowrap;
         }
 
 
@@ -147,7 +142,7 @@ p {
             color: white;
         }
 
-/* Default stylesssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+/* Default styles */
 .main-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
