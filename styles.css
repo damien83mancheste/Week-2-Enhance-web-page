@@ -33,6 +33,7 @@ html, body {
 
 .sidebar .box:hover {
     background-color: #555;
+	color: white;
 }
 
 .sidebar a {
@@ -42,6 +43,7 @@ html, body {
 
 .topbar {
     background-color: #30aabc;
+	color: white;
     padding: 10px;
     text-align: center;
     position: relative;
