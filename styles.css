@@ -10,25 +10,27 @@ html, body {
 
 .sidebar {
     width: 250px;
-    background-color: #222;
+    background-color: #1a1a1a;
     color: #fff;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     padding-top: 20px;
     z-index: 10;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
+	overflow-y: auto;	
 }
 
 .sidebar .box {
-    padding: 10px;
+    padding: 12px;
     margin: 10px;
-    background-color: #444;
+    background-color: #333;
     color: white;
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+	font-size: 16px;
 }
 
 .sidebar .box:hover {
@@ -38,13 +40,14 @@ html, body {
 
 .sidebar a {
     text-decoration: none;
+	color: inherit;
 }
 
 
 .topbar {
-    background-color: #007b9e;
+    background-color: #005f7a;
 	color: white;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     position: relative;
     z-index: 5;
@@ -52,31 +55,36 @@ html, body {
 
 .topbar .box {
     display: inline-block;
-    margin: 0 15px;
+    margin: 5px 15px;
     padding: 10px;
-    background-color: #444;
+    background-color: #222;
     color: white;
     border-radius: 5px;
 }
 
 .main-container {
-    margin-left: 250px; 
+    margin-left: 260px; 
     padding: 20px;
 }
 
 
 .flexbox {
-    background-color: powderblue;
+    background-color: #b0e0e6;
     flex: 1;
-    padding: 12%;
-    border: 10px solid #ccc;
+    padding: 5%;
+    border: 5px solid #666;
     border-radius: 10px;
     text-align: center;
     min-height: 10%;
     width: 70%;
-    margin-left: 20%;
+    margin-left: auto;
+	margin-right: auto;
     overflow: auto;
-    white-space: nowrap;
+    white-space: normal;
+}
+
+.flexbox:focus {
+    outline: 2px solid #007b9e;
 }
 
 
@@ -86,13 +94,12 @@ html, body {
     }
 
     .main-container {
-        margin-left: 0; 
+        margin-left: 200px; 
         padding: 10px;
     }
 
     .flexbox {
         width: 100%;
-        margin-left: 0;
         padding: 5%;
     }
 }
@@ -100,12 +107,19 @@ html, body {
 @media (max-width: 480px) {
     .sidebar {
         width: 100%; 
+		height: auto;
         position: relative;
+		padding-bottom: 10px;
     }
 
     .topbar .box {
         display: block;
         margin: 10px 0;
+    }
+	
+	 .main-container {
+        margin-left: 0;
+        padding: 10px;
     }
 
     .flexbox {
