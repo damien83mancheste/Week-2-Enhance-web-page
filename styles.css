@@ -142,45 +142,9 @@ p {
             color: white;
         }
 
-/* Default styles */
-.main-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-}
-
-.flexbox {
-  background-color: powderblue;
-  padding: 12%;
-  border: 10px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  min-height: 10%;
-  width: 100%;
-  overflow: auto;
-  white-space: nowrap;
-}
 
 /* Responsive Grid Layossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssut */
-@media only screen and (max-width: 600px) {
-  .flexbox:nth-child(1) { grid-area: 1 / span 6; }
-  .flexbox:nth-child(2) { grid-area: 2 / span 6; }
-  .flexbox:nth-child(3) { grid-area: 3 / span 6; }
-  .flexbox:nth-child(4) { grid-area: 4 / span 6; }
-}
 
-@media only screen and (min-width: 600px) {
-  .flexbox:nth-child(1) { grid-area: 1 / span 6; }
-  .flexbox:nth-child(2) { grid-area: 2 / span 1; }
-  .flexbox:nth-child(3) { grid-area: 2 / span 4; }
-  .flexbox:nth-child(4) { grid-area: 3 / span 6; }
-}
-
-@media only screen and (min-width: 768px) {
-  .flexbox:nth-child(1) { grid-area: 1 / span 6; }
-  .flexbox:nth-child(2) { grid-area: 2 / span 1; }
-  .flexbox:nth-child(3) { grid-area: 2 / span 4; }
-  .flexbox:nth-child(4) { grid-area: 2 / span 1; }
 }
 
 
