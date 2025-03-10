@@ -9,7 +9,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/axe-core@4.4.0/axe.min.js"></script>
 </head>
 <body>
-	<header>
+	<header role="banner" aria-label="Main Header">
 		<div class="topbar">
 			<a href="index.html"><div class="box">Home Page</div></a>
 			<button id="runAxeTest" class="box">Accessibility Test</button>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-<main role="main">
+<main role="main" aria-label="Main Content">
 	<div class="main-container">
 		<div class="flexbox" tabindex="0" style="
 			background-color: powderblue; 
@@ -46,20 +46,13 @@
 			margin-left: 12%;
 			overflow: auto; 
 			white-space: nowrap;">
-		" onfocus="this.style.outline='2px solid blue'" onblur="this.style.outline='2px solid transparent'">
-    
-		Week3
+			onfocus="this.style.outline='2px solid blue'"
+			onblur="this.style.outline='2px solid transparent'">
 			<h1>Week3</h1>
-
-			
-		
 		</div>
-      
-	
-</div>
-
+	</div>
 </main>
-    <footer role="contentinfo">
+    <footer role="contentinfo" aria-label="Footer Section">
         <p>🔬 Accessibility .</p>
 	</footer>	
 		
@@ -86,8 +79,4 @@ document.getElementById("runAxeTest").addEventListener("click", function() {
   });
 });
 </script>
-<!-- This where code end -->
-
-
-
 </html>
