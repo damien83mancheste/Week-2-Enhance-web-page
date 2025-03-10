@@ -95,26 +95,22 @@ p {
         }
 
 
-        .main-container {
-            display: flex;
-            gap: 1%;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 1%;
-			flex-wrap: wrap;
-			justify-content: space-between;
-        }
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
 
-        .flexbox {
-            flex: 1;
-            padding: 12%;
-            background-color: #f4f4f4;
-            border: 10px solid #ccc;
-            border-radius: 10px;
-            text-align: center;
-            min-height: 15%;
-			width: 25%;
-			margin-left: 12%;
+.flexbox {
+  background-color: powderblue;
+  padding: 12%;
+  border: 10px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 10%;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
         }
 
 
